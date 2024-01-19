@@ -76,10 +76,10 @@ while running:
             if event.key == pg.K_ESCAPE:
                 running = False
 
-            elif event.key == pg.K_LEFT:
+            elif event.key == pg.K_LEFT or event.key == pg.K_a:
                 left_pressed = True
 
-            elif event.key == pg.K_RIGHT:
+            elif event.key == pg.K_RIGHT or event.key == pg.K_d:
                 right_pressed = True
 
             elif event.key == pg.K_SPACE:
@@ -88,10 +88,10 @@ while running:
         # Keyreleases
         elif event.type == pg.KEYUP:
 
-            if event.key == pg.K_LEFT:
+            if event.key == pg.K_LEFT or event.key == pg.K_a:
                 left_pressed = False 
 
-            elif event.key == pg.K_RIGHT:
+            elif event.key == pg.K_RIGHT or event.key == pg.K_d:
                 right_pressed = False 
     
 
