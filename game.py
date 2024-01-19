@@ -101,6 +101,13 @@ while running:
     for alien in aliens:
         alien['y'] += 1
 
+    i = 0
+    for alien in aliens:
+        if alien["y"] > 600:
+            aliens.pop(i)
+            score -= 1
+        i += 1
+
     # Spaceship
     if left_pressed:
         ship_x -= 8
