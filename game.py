@@ -90,7 +90,7 @@ while running:
 
     # Alien
     for alien in aliens:
-        alien.y += 1
+        alien.move()
 
     i = 0
     for alien in aliens:
