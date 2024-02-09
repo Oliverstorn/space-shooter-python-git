@@ -18,7 +18,6 @@ class Alien:
 
     def move(self):
         self.x += 0
-        self.y += 0
         self.y += 1
         
 
